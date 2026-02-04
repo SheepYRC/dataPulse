@@ -1,0 +1,15 @@
+# 告诉工具去哪里找代码
+loaders:
+  - type: python
+    search_path: ["./src"]
+    modules: ["app"]
+    encoding: "utf-8"
+
+# 告诉工具如何处理提取的内容
+processors:
+  - type: filter
+  - type: smart
+
+# 渲染成 MkDocs 兼容的格式，并输出到 docs/api 文件夹
+renderer:
+  type: markdown

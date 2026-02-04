@@ -1,0 +1,28 @@
+site_name: 图书管理系统
+theme:
+  name: material
+  language: zh  # 设置界面语言为中文
+  palette:
+    # 浅色模式
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    # 深色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  features:
+    - navigation.tabs    # 顶部导航栏
+    - search.suggest     # 搜索建议
+    - search.highlight   # 搜索高亮
+
+nav:
+  - 首页: index.md
+  - 接口参考:
+      - App核心接口: api/app.md
