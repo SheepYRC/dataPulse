@@ -1,6 +1,5 @@
 import streamlit as st
 from src.core.database import db_manager
-import assets
 import pandas as pd
 
 def show():

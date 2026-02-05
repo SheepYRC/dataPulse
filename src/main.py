@@ -29,8 +29,9 @@ pg = st.navigation({
 st.sidebar.markdown("# 📡 DataPulse")
 st.sidebar.caption("本地数据处理黑科技")
 
-# Show Sidebar Status
-show_status_bar()
+# 在 main 中指定渲染到 sidebar
+with st.sidebar:
+    show_status_bar()
 
 # Run Navigation
 pg.run()

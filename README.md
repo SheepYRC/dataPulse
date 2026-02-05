@@ -5,4 +5,4 @@ use __"uv sync"__ to get venv
 
 use __"./doc.ps1"__ to run Document Generation
 
-use __"./runWeb.ps1"__ to run main.py
+use __"./run.ps1"__ to run main.py
