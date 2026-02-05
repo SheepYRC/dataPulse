@@ -1,0 +1,25 @@
+# Task List - DataPulse Framework Implementation
+
+- [x] Project Initialization [x]
+    - [x] Initialize `src/__init__.py`
+    - [x] Create `.streamlit/config.toml`
+    - [x] Set up `src/main.py` with multi-page navigation
+    - [x] Create `src/core/config.py` for global settings
+- [x] Implement Core Layer [x]
+    - [x] `src/core/database.py`: DuckDB & SQLite connections
+    - [x] `src/core/engine.py`: Polars & Pandas integration
+- [x] Implement Utility Layer [x]
+    - [x] `src/utils/logger.py`: Logging setup
+    - [x] `src/utils/metrics.py`: System performance monitoring
+    - [x] `src/utils/io_handler.py`: File I/O and encoding detection
+- [x] Implement UI Components [x]
+    - [x] `src/ui/components.py`: Reusable Streamlit widgets (Ready for extensions)
+    - [x] `src/ui/status_bar.py`: Performance monitor
+- [x] Implement Functional Modules (Stubs) [x]
+    - [x] `src/modules/home.py`: Workboard
+    - [x] `src/modules/assets.py`: Data Assets
+    - [x] `src/modules/workbench.py`: SQL Workbench
+    - [x] `src/modules/history.py`: History & Snapshots
+    - [x] `src/modules/insights.py`: Insights Engine
+- [ ] Final Verification [/]
+    - [ ] Run the Streamlit app to ensure the framework is functional

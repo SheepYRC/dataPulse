@@ -9,7 +9,7 @@ DataPulse——本地数据管理系统
 * **存储引擎：** **DuckDB**。适合单机本地分析的 OLAP 数据库，处理百万级数据仅需毫秒级，且无需安装服务端，直接内嵌在程序中。同时**SQLite**作为OLTP。
 * **计算库：** **Polars**。配合 DuckDB 极速处理大规模数据的转换。增加**Pandas**作为协同/备选方案。
 * **UI 框架：** **Streamlit**。
-* **开发辅助：** pydantic，pydoc-markdown，mkdocs，schemathesis
+* **开发辅助：** uv，pydantic，pydoc-markdown，mkdocs，schemathesis
 
 ---
 
@@ -87,6 +87,9 @@ dataPulse/
 ├── assets/                    # 静态资源 (Logo, 样式表, 示例数据)
 │   ├── css/                   # 自定义样式，让 Streamlit 更像原生软件
 │   └── samples/               # 内置的 10 万行示例数据 (csv/parquet)
+├── changes/                   # 修改记录
+│   ├── 20260205-1/            # 某次修改
+│   └── ...
 ├── data/                      # 本地持久化数据 (Git 忽略)
 │   ├── datapulse.db           # SQLite: 存储 配置, 日志
 │   └── analytics.duckdb       # DuckDB: 存储用户导入的百万级业务数据

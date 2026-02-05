@@ -1,0 +1,23 @@
+# Task List - Phase 2: Core Functionality Implementation
+
+- [x] SQL Workbench Implementation [x]
+    - [x] Smart Data Import (CSV/Excel)
+    - [x] SQL Query Execution Loop
+    - [x] Pagination for Large Result Sets (via st.dataframe)
+- [x] Data Assets & Metadata [x]
+    - [x] DuckDB Table Listing & Schema Inspection
+    - [x] Storage & Compression Audit
+    - [x] Table Health Assessment (Nulls, Duplicates)
+- [x] History & Snapshots [x]
+    - [x] Persistent SQL Logging (SQLite)
+    - [x] Parquet Snapshot Management
+- [x] Visual Insights [x]
+    - [x] Chart Selection & Generation
+    - [x] Exporting Charts (SVG/HTML) (Basic interface ready)
+- [x] Home Page Integration [x]
+    - [x] Quick Action Cards
+    - [x] Recent Activity Feed
+- [ ] Verification [/]
+    - [ ] Import a 1M+ row CSV
+    - [ ] Run analysis queries
+    - [ ] Verify snapshot persistence
