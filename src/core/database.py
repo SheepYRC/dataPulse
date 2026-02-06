@@ -21,12 +21,24 @@ class DatabaseManager:
     def _setup_sqlite(self):
         """Setup basic tables in SQLite if they don't exist."""
         cursor = self.sqlite_conn.cursor()
+        # SQL History
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS sql_history (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
                 sql_query TEXT,
                 tag TEXT DEFAULT '-'
+            )
+        """)
+        # Task Cards (M0)
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS tasks (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT NOT NULL,
+                description TEXT,
+                sql_script TEXT,
+                created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+                status TEXT DEFAULT 'pending'
             )
         """)
         self.sqlite_conn.commit()

@@ -1,0 +1,30 @@
+# Task: Refactor DataPulse according to new project.md design
+
+- [ ] 初始化与环境检查 [/]
+    - [ ] 检查并更新 `pyproject.toml` 依赖
+    - [ ] 确保 `data/snapshots` 等目录存在
+- [ ] 核心层更新 (Core Layer) [ ]
+    - [ ] 更新 `src/core/config.py`
+    - [ ] 更新 `src/core/database.py` (添加分析相关的 SQL 记录表格)
+    - [ ] 更新 `src/core/engine.py` (Polars/Pandas 支持)
+- [ ] UI 层更新 (UI Layer) [ ]
+    - [ ] 更新 `src/main.py` (使用 st.navigation 实现 9 个模块)
+    - [ ] 更新 `src/ui/components.py`
+    - [ ] 更新 `src/ui/status_bar.py`
+- [ ] 功能模块实现 (Functional Modules) [ ]
+    - [ ] Module 0: 工作看板 (Work dashboard)
+    - [ ] Module 1: 概况统计 (Summary statistics)
+    - [ ] Module 2: 数据资产 (Data Assets) - 包含导入和查看
+    - [ ] Module 3: 数据查询 (Data Query) - SQL/GUI 混合模式
+    - [ ] Module 4: 数据处理 (Data Process) - 算子链
+    - [ ] Module 5: 可视化引擎 (Insights Engine)
+    - [ ] Module 6: 历史与快照 (History & Snapshots)
+    - [ ] Module 7: 系统管理 (System Management)
+    - [ ] Module 8: 全局搜索 (Command Palette)
+- [ ] 工具类更新 (Utils) [ ]
+    - [ ] 更新 `src/utils/io_handler.py` (增强编码识别)
+    - [ ] 更新 `src/utils/metrics.py` (硬件指标)
+- [ ] 验证与测试 [ ]
+    - [ ] 运行应用程序确保导航正常
+    - [ ] 验证百万级数据导入与查询性能
+    - [ ] 验证快照功能
