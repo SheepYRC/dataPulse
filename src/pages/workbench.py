@@ -33,8 +33,8 @@ def show():
     sql_input = st.text_area("SQL 编辑器", value="SELECT * FROM imported_data LIMIT 100", height=150)
     
     col1, col2 = st.columns([1, 5])
-    run_btn = col1.button("▶ 运行查询", use_container_width=True)
-    save_btn = col2.button("💾 保存为结果快照", use_container_width=False)
+    run_btn = col1.button("▶ 运行查询", width='content')
+    save_btn = col2.button("💾 保存为结果快照", width='stretch')
 
     if run_btn:
         try:
@@ -57,7 +57,7 @@ def show():
         df = st.session_state['last_query_result']
         
         # Streamlit's st.dataframe is efficient for large datasets (lazy loading)
-        st.dataframe(df, use_container_width=True)
+        st.dataframe(df, width='content')
         
         if save_btn:
             # Generate a filename based on timestamp

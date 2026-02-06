@@ -38,7 +38,7 @@ def show():
             col2.write(f"**字段数:** {len(schema)}")
             
             st.write("**字段定义:**")
-            st.dataframe(schema, use_container_width=True)
+            st.dataframe(schema, width='content')
             
             # Health Check (Simple version)
             if st.button(f"🔍 运行 {selected_table} 健康评估"):

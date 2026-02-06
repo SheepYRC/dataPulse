@@ -16,7 +16,7 @@ def show():
             st.info("暂无查询历史。")
         else:
             df_history = pd.DataFrame(history, columns=["时间", "SQL 语句", "标签"])
-            st.dataframe(df_history, use_container_width=True)
+            st.dataframe(df_history, width='content')
             
             if st.button("🗑️ 清空历史"):
                 db_manager.get_sqlite().execute("DELETE FROM sql_history")

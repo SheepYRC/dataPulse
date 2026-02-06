@@ -10,13 +10,13 @@ def show():
     st.subheader("⚡ 快捷动作")
     col1, col2, col3 = st.columns(3)
     with col1:
-        if st.button("🧼 清理临时缓存", use_container_width=True):
+        if st.button("🧼 清理临时缓存", width='content'):
             st.info("缓存已清理（模拟）")
     with col2:
-        if st.button("🎒 备份当前数据库", use_container_width=True):
+        if st.button("🎒 备份当前数据库", width='content'):
             st.info("数据库已备份至 backup 目录（模拟）")
     with col3:
-        if st.button("📊 查看数据分布", use_container_width=True):
+        if st.button("📊 查看数据分布", width='content'):
             st.info("未配置"),
 
     st.divider()
